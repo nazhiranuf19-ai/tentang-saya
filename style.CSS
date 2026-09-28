@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darksalmon;
+    color: antiquewhite;
+    font-family :'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: antiquewhite;
+    text-align: center;
+    margin-left: 20px;
+}
+
+h2{
+    font-size: 1rem;
+    margin: 14px;
+    color: antiquewhite;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10x 14px;
+    color: antiquewhite;
+}
+
+header{
+    background-color: rgb(88, 0, 8);
+    color: bisque;
+    padding: 16px 12px;
+}
+
+header h1{
+    color: antiquewhite;
+}
+
+header hr{
+    border: none;
+    height: 2x;
+    background-color: coral;
+    width: 70%;
+    margin: 14px auto;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+nav a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10x 20x;
+    border: 2px solid;
+}
+
+nav a:hover {
+    background-color: antiquewhite;
+    color: crimson;
+}
+
+img {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    border: 2px solid;
+}
+
+table {
+    width: 100x;
+    margin: 20px 0;
+    border: 6px rgb(248, 244, 244);
+}
+
+caption {
+    font-weight: bold;
+    margin: 0 0 7px 0;
+    text-align: center;
+}
+
+th,
+td {
+  border: 1px solid #470018;
+  padding: 10px 12px;
+  text-align: center;
+  
+}
+
+thead th {
+  background-color: #39051d;
+  color: #c16666;
+}
+
+.baris-genap {
+  background-color: #6d0101a5;
+}
+
+form {
+  width: 100%;
+  margin: 24px 0;
+  padding: 20px;
+  background-color: crimson(172, 116, 135);
+  border: 2px solid;
+}
+
+.form-group {
+  margin: 0 0 16px 1;
+  padding: 4px 0;
+}
+
+label {
+  display: block;
+  margin: 0 0 6px 0;
+   font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 2px 0 0 0;
+  border: 1px solid #470438;
+  font-size: 1rem;
+}
+
+.pilihan-gender {
+  margin: 0 18px 0 0;
+}
+
+.btn-submit {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin: 8px 0 0 0;
+  background-color: #4f0107;
+  color: antiquewhite;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-submit:hover {
+  background-color: #c24b66;
+  cursor: pointer;
+}
+
+.tentang-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px 16px;
+}
+
+.tentang-grid img {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  img {
+    width: 300px;
+  }
+
+  form {
+    width: 500px;
+    margin: 24px auto;
+  }
+
+  .tentang-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+}
